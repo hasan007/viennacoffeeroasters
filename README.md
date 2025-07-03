@@ -1,13 +1,13 @@
-# Vienna Coffee Roasters Website
+# Vienna Coffee Roasters Shopify Theme
 
-This repository contains a simple static website for **Vienna Coffee Roasters**. The site includes a home page, an about page, and a contact form with basic client-side functionality.
+This repository contains a minimal Shopify theme for **Vienna Coffee Roasters**. The theme includes a home page, an about page, and a contact form with basic client-side functionality.
 
 ## Getting Started
 
-No build tools are required. To view the site locally, open `index.html` in your browser:
+To preview the theme locally you can use the [Shopify CLI](https://shopify.dev/docs/themes/tools/cli):
 
 ```bash
-xdg-open index.html  # or open index.html using your system's default method
+shopify theme serve
 ```
 
-The `images` directory contains placeholders for product photos. Replace them with your own images as needed.
+The `assets` directory includes placeholders for images. Replace them with your own product photos as needed.

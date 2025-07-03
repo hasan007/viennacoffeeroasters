@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ page_title }} - Vienna Coffee Roasters</title>
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ content_for_header }}
+</head>
+<body>
+    <header>
+        <h1><a href="{{ '/' | relative_url }}">Vienna Coffee Roasters</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ pages['about'].url }}">About</a></li>
+                <li><a href="{{ pages['contact'].url }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content_for_layout }}
+    </main>
+    <footer>
+        <p>&copy; {{ 'now' | date: '%Y' }} Vienna Coffee Roasters</p>
+    </footer>
+    {{ 'script.js' | asset_url | script_tag }}
+</body>
+</html>
